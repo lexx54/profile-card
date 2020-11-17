@@ -1,0 +1,43 @@
+/*-------------------variables----------------*/
+:root {
+  --principal-color: hsl(185, 75%, 39%);
+  --title-color: hsl(229, 23%, 23%);
+  --text-color: hsl(227, 10%, 46%);
+}
+
+/*-------------------general----------------*/
+body {
+  background-color: var(--principal-color);
+}
+
+/*-------------------card------------------*/
+.card-container {
+  background-color: white;
+  margin: 30vh 5vw auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  align-items: center;
+}
+.card-content-inside {
+  display: flex;
+  flex-direction: column;
+}
+.card-content-details {
+  display: flex;
+  align-self: stretch;
+  
+}
+.card-content-details p {
+  display: flex;
+  flex-direction: column;
+}
+.card-content-details p:not(:last-child) {
+  padding-right: 1em;
+}
