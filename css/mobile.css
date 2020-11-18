@@ -7,17 +7,38 @@
 
 /*-------------------general----------------*/
 body {
-  background-color: var(--principal-color);
+  /* background-color: var(--principal-color); */
+  background: url(../images/bg-pattern-top.svg) -100% -50%/75% 70% no-repeat,
+    url(../images/bg-pattern-bottom.svg) 250% 200%/80% 80% no-repeat
+      var(--principal-color);
+
+  /* background-attachment: fixed; */
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  color: var(--text-color);
+  text-align: center;
+}
+main {
 }
 
 /*-------------------card------------------*/
+#profile-picture {
+  border-radius: 50%;
+  border: 5px solid white;
+}
 .card-container {
   background-color: white;
-  margin: 30vh 5vw auto;
+  background-image: url(../images/bg-pattern-card.svg);
+  background-position: top;
+  background-repeat: repeat-x;
+  margin: 25vh auto;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: fit-content;
+  box-shadow: 0px 0px 6px 3px var(--title-color);
+  padding: 0 2em 1em;
 }
 .card-content {
   display: flex;
@@ -29,10 +50,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+.city {
+  margin: 0em auto 2em;
+}
 .card-content-details {
   display: flex;
   align-self: stretch;
-  
 }
 .card-content-details p {
   display: flex;
@@ -40,4 +63,8 @@ body {
 }
 .card-content-details p:not(:last-child) {
   padding-right: 1em;
+}
+.account-info-title {
+  color: var(--title-color);
+  font-weight: 700;
 }
